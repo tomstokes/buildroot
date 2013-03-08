@@ -1,0 +1,10 @@
+config BR2_PACKAGE_CRYPTSETUP
+	bool "cryptsetup"
+	select BR2_PACKAGE_LVM2
+	select BR2_PACKAGE_POPT
+	select BR2_PACKAGE_LIBGCRYPT
+	help
+	  Provides cryptsetup tool for working with dm-crypt managed
+          block devices
+          
+          http://code.google.com/p/cryptsetup/
